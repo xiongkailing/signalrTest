@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>SignalR Client</h2>
+
+<div>
+    <ul id="messages">
+
+    </ul>
+</div>
+
+@section scripts{
+    <script src="~/Scripts/jquery.signalR-2.2.0.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+    <script>
+        $(function () {
+            var clientId = parseInt(Math.random() * 10000);
+            $.connection.hub.url = "/signalr";
+            $.connection.hub.qs = { 'name': clientId.toString() };
+            var signalrProxy = $.connection.signalrTest;
+            signalrProxy.client.hello=function (name) {
+                $("#messages").append("<li> system:" + name + "has jioned in</li>");
+            };
+            signalrProxy.client.byebye = function (name) {
+                $("#messages").append("<li> system:" + name + " has leaved</li>");
+            };
+
+            signalrProxy.client.getMessage = function (name, message) {
+                $("#messages").append("<li>" + name + " says: " + message + "</li>");
+            };
+
+            $.connection.hub.start({Name:clientId.toString()}).done(function () {
+                alert(clientId.toString() + "has connect to signalr server");
+            });
+        });      
+    </script>
+}

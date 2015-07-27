@@ -1,0 +1,10 @@
+F:\MyCode\WebSocket\SignalR.Message.Pusher\bin\Debug\SignalR.Message.Pusher.exe.config
+F:\MyCode\WebSocket\SignalR.Message.Pusher\bin\Debug\SignalR.Message.Pusher.exe
+F:\MyCode\WebSocket\SignalR.Message.Pusher\bin\Debug\SignalR.Message.Pusher.pdb
+F:\MyCode\WebSocket\SignalR.Message.Pusher\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+F:\MyCode\WebSocket\SignalR.Message.Pusher\bin\Debug\Newtonsoft.Json.dll
+F:\MyCode\WebSocket\SignalR.Message.Pusher\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+F:\MyCode\WebSocket\SignalR.Message.Pusher\bin\Debug\Newtonsoft.Json.xml
+F:\MyCode\WebSocket\SignalR.Message.Pusher\obj\Debug\SignalR.Message.Pusher.exe
+F:\MyCode\WebSocket\SignalR.Message.Pusher\obj\Debug\SignalR.Message.Pusher.pdb
+F:\MyCode\WebSocket\SignalR.Message.Pusher\obj\Debug\SignalR.Message.Pusher.csprojResolveAssemblyReference.cache
